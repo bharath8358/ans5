@@ -1,2 +1,7 @@
 ---
 # tasks file for myrole
+
+include: java.yml
+include: adduser.yml
+include: installtomcat.yml
+include: updatepermissions.yml

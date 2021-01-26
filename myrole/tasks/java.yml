@@ -1,0 +1,9 @@
+---
+- name: install update ubuntu
+  apt:
+    update_cache: yes
+
+- name: install java u
+  apt: 
+    name: default-jdk
+    state: present
