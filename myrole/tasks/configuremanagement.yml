@@ -1,10 +1,4 @@
 ---
-- name: Configure Tomcat Web Management Interface
-  file:
-    path: /opt/tomcat/conf
-    name: tomcat-users.xml
-    state: touch
-    
 - name: copy file
   template:
     src: templates/conf.j2
