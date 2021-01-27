@@ -2,4 +2,4 @@
 - name: Configure Tomcat Web Management Interface
   template:
     src: conf.j2
-    dest: /conf/tomcat-users.xml
+    dest: tomcat-users.xml
