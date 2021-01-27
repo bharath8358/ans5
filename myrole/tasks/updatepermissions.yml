@@ -1,2 +1,49 @@
+---
+- name: give ownership to tomcat
+  file:
+    path: /opt/tomcat
+    state: directory
+    recurse: yes
+    group: tomcat
 
+- name: read access to tomcat group
+  file:
+    path: /opt/tomcat/conf
+    state: directory
+    recurse: yes
+    mode: g+r
+
+- name: give excecute permissions
+  file:
+    path: /opt/tomcat/conf
+    state: directory
+    mode: g+x
+
+- name: make the tomcat as owner of webapps
+  file:
+  path: /opt/tomcat/webapps
+  state: directory
+  recurse: yes
+  owner: tomcat
+
+- name: make the tomcat as owner of work
+  file:
+  path: /opt/tomcat/work
+  state: directory
+  recurse: yes
+  owner: tomcat
+
+- name: make the tomcat as owner of temp
+  file:
+  path: /opt/tomcat/temp
+  state: directory
+  recurse: yes
+  owner: tomcat
+
+- name: make the tomcat as owner of logs
+  file:
+  path: /opt/tomcat/logs
+  state: directory
+  recurse: yes
+  owner: tomcat
   
