@@ -4,6 +4,4 @@
 - include: java.yml
   include: adduser.yml
   include: installtomcat.yml
-  include: updatepermissions.yml
-  include: tomcatservice.yml
-  include: configuremanagement.yml
+  
