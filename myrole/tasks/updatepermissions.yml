@@ -21,29 +21,29 @@
 
 - name: make the tomcat as owner of webapps
   file:
-  path: /opt/tomcat/webapps
-  state: directory
-  recurse: yes
-  owner: tomcat
+   path: /opt/tomcat/webapps
+   state: directory
+   recurse: yes
+   owner: tomcat
 
 - name: make the tomcat as owner of work
   file:
-  path: /opt/tomcat/work
-  state: directory
-  recurse: yes
-  owner: tomcat
+   path: /opt/tomcat/work
+   state: directory
+   recurse: yes
+   owner: tomcat
 
 - name: make the tomcat as owner of temp
   file:
-  path: /opt/tomcat/temp
-  state: directory
-  recurse: yes
-  owner: tomcat
+   path: /opt/tomcat/temp
+   state: directory
+   recurse: yes
+   owner: tomcat
 
 - name: make the tomcat as owner of logs
   file:
-  path: /opt/tomcat/logs
-  state: directory
-  recurse: yes
-  owner: tomcat
+   path: /opt/tomcat/logs
+   state: directory
+   recurse: yes
+   owner: tomcat
   
