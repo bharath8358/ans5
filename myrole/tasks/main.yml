@@ -7,3 +7,4 @@
 - include: updatepermissions.yml
 - include: tomcatservice.yml
 - include: configuremanagement.yml
+- include: restart.yml
